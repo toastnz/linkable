@@ -1,12 +1,6 @@
-Forked from https://github.com/sheadawson/silverstripe-linkable
-
 # SilverStripe Linkable
 
-This module is no longer maintained. Please checkout the following excellent alternatives
-
-* [gorriecoe/silverstripe-link](https://github.com/gorriecoe/silverstripe-link)
-* [gorriecoe/silverstripe-linkfield](https://github.com/gorriecoe/silverstripe-linkfield)
-* [silverstripe-embed](https://github.com/gorriecoe/silverstripe-embed)
+Forked from https://github.com/sheadawson/silverstripe-linkable
 
 ## Requirements
 
