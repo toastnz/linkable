@@ -1,3 +1,5 @@
+Forked from https://github.com/sheadawson/silverstripe-linkable
+
 # SilverStripe Linkable
 
 This module is no longer maintained. Please checkout the following excellent alternatives
