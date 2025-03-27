@@ -167,6 +167,11 @@ class LinkField extends TextField
         return $this->linkObject;
     }
 
+    public function Value()
+    {
+        return $this->value;
+    }
+
     /**
      * Returns the HTML of the LinkForm for the dialog
      *
