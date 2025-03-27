@@ -153,12 +153,12 @@ class LinkField extends TextField
     {
         $requestID = Controller::curr()->request->requestVar('LinkID');
 
-        if ($requestID == '0' && !$this->Value()) {
+        if ($requestID == '0' && !$this->getValue()) {
             return null;
         }
 
         if (!$this->linkObject) {
-            $id = $this->Value() ? $this->Value() : $requestID;
+            $id = $this->getValue() ? $this->getValue() : $requestID;
             if ((int)$id) {
                 $this->linkObject = Link::get()->byID($id);
             }
@@ -167,10 +167,6 @@ class LinkField extends TextField
         return $this->linkObject;
     }
 
-    public function Value()
-    {
-        return $this->value;
-    }
 
     /**
      * Returns the HTML of the LinkForm for the dialog

@@ -153,7 +153,7 @@ class EmbeddedObjectField extends FormField
      */
     public function saveInto(DataObjectInterface $record)
     {
-        $val = $this->Value();
+        $val = $this->getValue();
         $field = $this->getName() . 'ID';
 
         if (!strlen($val['sourceurl']) && $this->object) {
