@@ -52,6 +52,5 @@
             "client"
         ]
     },
-    "prefer-stable": true,
-    "minimum-stability": "dev"
+    "prefer-stable": true
 }
