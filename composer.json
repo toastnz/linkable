@@ -25,15 +25,9 @@
     "require": {
         "silverstripe/vendor-plugin": "^2 || ^3",
         "silverstripe/framework": "^6",
-        "unclecheese/display-logic": "dev-master",
+        "unclecheese/display-logic": "*",
         "embed/embed": "*"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/toastnz/silverstripe-display-logic"
-        }
-    ],
     "require-dev": {
         "phpunit/phpunit": "^5.7"
     },
@@ -52,5 +46,6 @@
             "client"
         ]
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
