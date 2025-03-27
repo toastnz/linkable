@@ -43,7 +43,7 @@
     "extra": {
         "installer-name": "linkable",
         "branch-alias": {
-            "dev-master": "6.0.0-beta1-dev"
+            "dev-master": "6.0.0-beta1"
         },
         "expose": [
             "client"
