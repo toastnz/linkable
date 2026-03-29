@@ -53,6 +53,7 @@ $.entwine('ss', ($) => {
 
       // handle dialog form submission
       this.getDialog().on('submit', 'form', function () {
+        const $this = $(this);
         const options = {};
         options.success = function (response) {
           if ($(response).is('.field')) {
@@ -64,7 +65,15 @@ $.entwine('ss', ($) => {
           }
         };
 
-        $(this).ajaxSubmit(options);
+        if ($this.ajaxSubmit) {
+          $this.ajaxSubmit(options);
+        } else {
+          $.ajax($this.attr('action'), {
+            data: $this.serialize(),
+            type: $this.attr('method') || 'POST',
+            success: options.success
+          });
+        }
 
         return false;
       });
